@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <input type="file" id="meme-insert" accept="image/*" onchange="img()">
+  <img src="" alt="">
+  <div id="botoes">
+    <button id="void">⚫</button>
+    <button id="fire">🔥</button>
+    <button id="water">🌊</button>
+    <button id="earth">🪨</button>
+  </div>
+  <section>
+    <input type="text" id="text-input" oninput="dizeres()" maxlength="60">
+    <div id="meme-image-container">
+      <img src="" id="meme-image" width="400px" height="400px" alt="meme escolhido">
+      <p id="meme-text"></p>
+    </div>
+  </section>
+  <section id="memes">
+    <img src="imgs/meme1.png" alt="cazé" id="meme-1">
+    <img src="imgs/meme2.png" alt="cyberpunk" id="meme-2">
+    <img src="imgs/meme3.png" alt="gigachad" id="meme-3">
+    <img src="imgs/meme4.png" alt="rei do kuduro" id="meme-4">
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
